@@ -1,6 +1,6 @@
 #!/bin/bash
 # setup.sh - Script to set up Azure resources and configurations
-
+# https://github.com/outa2020/AzurePortal.git
 
 # Set environment
 ENVIRONMENT="dev" # Change to "prod" for production setup

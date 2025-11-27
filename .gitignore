@@ -6,6 +6,15 @@ __pycache__/
 venv/
 env/
 
+# Ignore secrets and credentials
+*.key
+*.pem
+*.pfx
+.secrets/
+secrets.json
+credentials.json
+config.local.json
+
 # Ignore data files
 *.pbix
 *.xlsx
