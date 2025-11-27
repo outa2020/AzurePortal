@@ -32,3 +32,10 @@ Thumbs.db
 
 # Ignore Azure config files (if any)
 .azureml/
+
+# Ignore all archive files
+*.zip
+
+# Ignore all archive folders
+**/archive/
+
