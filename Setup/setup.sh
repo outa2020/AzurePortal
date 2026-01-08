@@ -6,7 +6,9 @@
 ENVIRONMENT="dev" # Change to "prod" for production setup
 
 # Create random string for unique workspace names
-suffix=$(date +%Y%m%d)  # Simple date-based suffix
+# let fix it to be 05/12/2025 
+#suffix=$(date +%Y%m%d)  # Simple date-based suffix
+suffix="20251205"  # Fixed date-based suffix
 
 # Set the necessary variables
 RESOURCE_GROUP="rg-HHN-${ENVIRONMENT}"

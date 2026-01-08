@@ -47,4 +47,6 @@ Thumbs.db
 
 # Ignore all archive folders
 **/archive/
-
+**/Other/
+# specific files
+LinenData.csv
