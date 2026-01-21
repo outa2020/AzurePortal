@@ -38,6 +38,7 @@ Thumbs.db
 *.h5
 *.pt
 *.onnx
+*.pkl
 
 # Ignore Azure config files (if any)
 .azureml/

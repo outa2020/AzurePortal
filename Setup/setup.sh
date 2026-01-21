@@ -8,7 +8,7 @@ ENVIRONMENT="dev" # Change to "prod" for production setup
 # Create random string for unique workspace names
 # let fix it to be 05/12/2025 
 #suffix=$(date +%Y%m%d)  # Simple date-based suffix
-suffix="20251205"  # Fixed date-based suffix
+suffix="20260117"  # Fixed date-based suffix
 
 # Set the necessary variables
 RESOURCE_GROUP="rg-HHN-${ENVIRONMENT}"
@@ -36,9 +36,9 @@ az configure --defaults workspace=$WORKSPACE_NAME
 echo "Creating a compute instance with name: " $COMPUTE_INSTANCE
 az ml compute create --name ${COMPUTE_INSTANCE} --size STANDARD_DS11_V2 --type ComputeInstance 
 
-# Create compute cluster (larger for prod workloads)
+# Create compute cluster (larger for prod workloads) max 2 nodes
 echo "Creating a compute cluster with name: " $COMPUTE_CLUSTER
-az ml compute create --name ${COMPUTE_CLUSTER} --size STANDARD_DS11_V2 --max-instances 5 --type AmlCompute
+az ml compute create --name ${COMPUTE_CLUSTER} --size STANDARD_DS11_V2 --max-instances 2 --type AmlCompute
 
 echo "✅ Production environment setup complete!"
 echo "Resource Group: $RESOURCE_GROUP"
