@@ -2,10 +2,11 @@
 az group delete --name rg-HHN-dev --yes --no-wait
 
 # to check deletion status
-# az group show --name rg-HHN-dev
+az group show --name rg-HHN-dev
 
-
-## other useful commands
+## useful commands when copying to a new machine
+pip install azure-ai-ml
+pip show azure-ai-ml # to check version
 
 # create a repo in githup
 git init
